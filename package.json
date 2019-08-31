@@ -1,0 +1,24 @@
+{
+  "name": "shoppinglist",
+  "version": "1.0.1",
+  "description": "It is my first work with react mongo express node",
+  "main": "App.js",
+  "scripts": {
+	"client-install": "npm install --prefix client",
+    "start": "node App.js",
+    "server": "nodemon App.js",
+	"client" : "npm start --prefix client",
+	"dev" : "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "tanvirgeek",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.0.0 "
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
